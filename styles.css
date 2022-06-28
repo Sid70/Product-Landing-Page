@@ -1,0 +1,362 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eee;
+}
+
+/* Header Section */
+
+#header {
+    display: flex;
+    width: 100%;
+    padding: 18px 10px;
+    position: fixed;
+    top: 0;
+    background-color: #eee;
+    z-index: 1;
+}
+
+.logo {
+    width: 55%;
+    padding-left: 30px;
+}
+
+#nav-bar {
+    width: 45%;
+}
+
+#header-img {
+    width: 23vw;
+    height: 100%;
+}
+
+#nav-bar ul {
+    display: flex;
+    height: 100%;
+}
+
+#nav-bar ul li {
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    padding: 8px 1px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    margin: 10px auto 0px;
+}
+
+/* Search Bar */
+#hero {
+    text-align: center;
+    margin: 78px 0px;
+    padding: 50px 0px 0px;
+
+}
+
+#hero h2 {
+    font-size: 2em;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+}
+
+input[type="email"] {
+    width: 24%;
+    padding: 8px 5px;
+    margin: 10px auto;
+}
+
+input[type="submit"] {
+    text-transform: uppercase;
+    width: 15%;
+    padding: 8px 5px;
+    margin: 5px auto;
+    color: black;
+    background-color: rgb(200, 181, 71);
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+/* Feature */
+#features {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.grid {
+    display: flex;
+    padding: 30px 20px;
+}
+
+.icon {
+    color: darkorange;
+    margin-right: 30px;
+}
+
+.desc {
+    justify-content: left;
+    text-align: start;
+}
+
+#how-it-works {
+    width: 100%;
+    margin: 80px auto 70px;
+    text-align: center;
+}
+
+#video {
+    width: 70%;
+}
+
+#pricing {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 3);
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    height: 320px;
+}
+
+.product ol li {
+    list-style: none;
+    padding: 10px 0px;
+}
+
+.btn {
+    width: 50%;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 5px;
+    font-weight: bold;
+    font-size: large;
+
+    background-color: #f1c40f;
+}
+
+.level {
+    text-transform: uppercase;
+    background-color: #ddd;
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product h2 {
+    padding: 8px 0px;
+}
+
+footer {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #ddd;
+    text-align: end;
+    padding: 30px 20px;
+
+}
+
+footer ul {
+    display: flex;
+    justify-content: end;
+}
+
+footer ul li {
+    list-style: none;
+    padding: 0px 10px;
+    padding-bottom: 4px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: large;
+}
+
+@media (max-width:1025px) {
+
+    .container {
+        width: 92%;
+        margin: 10px auto 0px;
+    }
+
+    input[type="email"] {
+        width: 35%;
+    }
+
+    input[type="submit"] {
+
+        width: 20%;
+    }
+
+    #video {
+        width: 83%;
+        height: 310px;
+    }
+}
+
+@media (max-width:769px) {
+
+    .container {
+        width: 100%;
+        margin: 10px auto 0px;
+    }
+
+    input[type="email"] {
+        width: 45%;
+    }
+
+    input[type="submit"] {
+
+        width: 25%;
+    }
+
+    #video {
+        width: 83%;
+        height: 310px;
+    }
+}
+
+@media (max-width:426px) {
+
+
+
+    #header {
+        display: flex;
+        flex-direction: column;
+        padding: 0px auto;
+        align-items: center;
+    }
+
+    #header-img {
+        width: 100%;
+    }
+
+    .logo {
+        padding: 0;
+        width: 75%;
+    }
+
+    #nav-bar ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        width: 100%;
+        margin: 10px auto 0px;
+    }
+
+    #hero {
+        margin-top: 150px;
+        width: 100%;
+    }
+
+    #hero h2 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    input[type="email"] {
+        width: 78%;
+        padding: 10px;
+    }
+
+    input[type="submit"] {
+
+        width: 45%;
+        font-size: 4vw;
+    }
+
+    #video {
+        width: 95%;
+        height: 225px;
+    }
+
+    #pricing {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .product {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    footer {
+       width: 100%;
+       text-align: center;
+    
+    }
+    
+    footer ul {
+        justify-content: center;
+        padding: 10px;
+       
+    }
+}
+
+@media (max-width:708px) {
+
+    .container {
+        width: 100%;;
+    }
+
+    input[type="email"] {
+        width: 50%;
+    }
+
+    input[type="submit"] {
+
+        width: 30%;
+    }
+
+    #video {
+        width: 83%;
+        height: 310px;
+    }
+
+    #pricing {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .product
+    {
+
+        width: 70%;
+        margin: 20px auto;
+    }
+}
